@@ -6,9 +6,9 @@ name: CI
 # events but only for the main branch
 on:
   push:
-    branches: [main]
+    branches: [main, develop]
   pull_request:
-    branches: [main]
+    branches: [main, develop]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -70,7 +70,7 @@ jobs:
       # Archive test results
       - name: Archiving test artifacts
         uses: actions/upload-artifact@v2
-        with: 
+        with:
           name: ${{ matrix.os }}-artifacts
           path: |
             test-resources/screenshots/*.png
