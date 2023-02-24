@@ -3093,7 +3093,7 @@ minimatch@^3.0.3, minimatch@^3.0.4, minimatch@^3.1.1:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimatch@^5.0.1:
+minimatch@^5.0.1, minimatch@^5.1.0:
   version "5.1.6"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-5.1.6.tgz#1cfcb8cf5522ea69952cd2af95ae09477f122a96"
   integrity sha512-lKwV/1brpG6mBUFHtb7NUmtABCb2WZZmm2wNiOA5hAb8VdCS4B3dtMWyvcoViccwAW/COERjXLt0zP1zXUN26g==
@@ -4004,7 +4004,7 @@ side-channel@^1.0.4:
     get-intrinsic "^1.0.2"
     object-inspect "^1.9.0"
 
-signal-exit@^3.0.0:
+signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
