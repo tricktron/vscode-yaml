@@ -241,7 +241,7 @@
   },
   "extensionDependencies": [],
   "scripts": {
-    "build": "yarn run clean && yarn run lint && yarn run vscode:prepublish",
+    "build": "yarn run clean && yarn run build-yaml-language-server && yarn run lint && yarn run vscode:prepublish",
     "check-dependencies": "node ./scripts/check-dependencies.js",
     "clean": "rimraf out && rimraf dist",
     "compile": "webpack --mode none",
@@ -252,7 +252,8 @@
     "vscode:prepublish": "webpack --mode production",
     "watch": "webpack --mode development --watch --info-verbosity verbose",
     "test-compile": "yarn clean && tsc -p ./ && webpack --mode development",
-    "run-in-chromium": "npm run compile && vscode-test-web --browserType=chromium --extensionDevelopmentPath=. ."
+    "run-in-chromium": "npm run compile && vscode-test-web --browserType=chromium --extensionDevelopmentPath=. .",
+    "build-yaml-language-server": "cd node_modules/yaml-language-server && yarn install && yarn build"
   },
   "devDependencies": {
     "@types/chai": "^4.2.12",
@@ -298,7 +299,6 @@
     "vscode-languageclient": "7.0.0",
     "vscode-nls": "^3.2.1",
     "vscode-uri": "^2.0.3",
-    "whatwg-fetch": "^3.6.2",
-    "yaml-language-server": "next"
+    "yaml-language-server": "tricktron/yaml-language-server#develop"
   }
 }
